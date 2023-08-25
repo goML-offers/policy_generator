@@ -11,6 +11,7 @@ router = APIRouter()
 @router.post('/goml/LLM marketplace/policy_generator', status_code=201)
 def policy_detials(model:UserDetails):
     try:
+        print(model)
         obj = policy_suggestion(model.__dict__)
         return obj
     except Exception as e:

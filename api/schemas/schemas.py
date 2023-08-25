@@ -11,11 +11,26 @@ class DetailsPersonProposedInsured(BaseModel):
     premium_tier: Optional[str] = None
     basic_sum_insured: Optional[str] = None
 
+class health_conditions(BaseModel):
+    high_blood_pressure: str = None
+    tuberculosis : str = None
+    ulcer : str = None
+    kidney_failure: str = None
+
+class nomine(BaseModel):
+
+    name : str
+    nominee_name : str
+    relationship : str
+    nominee_address: str
+    
+
 class UserDetails(BaseModel):
     name: Optional[str] = None
     address: Optional[str] = None
     age: Optional[str] = None
     gender: Optional[str] = None
+    insurance_type : Optional[str] = None
     child: Optional[str] = None
     landmark: Optional[str] = None
     city: Optional[str] = None
@@ -34,11 +49,15 @@ class UserDetails(BaseModel):
     policy_period_to: Optional[str] = None
     sum_insured: Optional[str] = None
     details_person_proposed_insured: Dict[str, DetailsPersonProposedInsured] = {}
+    nominee : Dict[str,nomine] = {}
+    health_conditions : health_conditions
     place: Optional[str] = None
     date: Optional[str] = None
 
     class Config:
         orm_mode = True
+
+     
         # schema_extra = {
         #     "example": {
         #         "name": "John",

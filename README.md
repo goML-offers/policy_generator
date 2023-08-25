@@ -7,6 +7,7 @@
   "address": "string",
   "age": "string",
   "gender": "string",
+  "insurance_type": "string",
   "child": "string",
   "landmark": "string",
   "city": "string",
@@ -25,6 +26,13 @@
   "policy_period_to": "string",
   "sum_insured": "string",
   "details_person_proposed_insured": {},
+  "nominee": {},
+  "health_conditions": {
+    "high_blood_pressure": "string",
+    "tuberculosis": "string",
+    "ulcer": "string",
+    "kidney_failure": "string"
+  },
   "place": "string",
   "date": "string"
 }
