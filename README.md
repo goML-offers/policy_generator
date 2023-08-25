@@ -34,7 +34,7 @@ An email sent to the user's provided email address with a pre-filled Health insu
 
 ### Execution
 > run requirements.txt
-> run app.py
+> run app.py (run uvicorn api.app:app --reload)
 > open this url on a browser http://127.0.0.1:8000/docs
 > provide the necessary inputs in the as required, don't forget to remove the sample values already provided
 > check your email to get the generated policy form

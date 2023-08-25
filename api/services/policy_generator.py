@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.insert(0, 'LLM policy generator\\api\\')
 from services.send_email import send_email_with_attachment
-os.environ["REPLICATE_API_TOKEN"]
+os.environ["REPLICATE_API_TOKEN"] = os.getenv('REPLICATE_API_TOKEN')
 
 
 def policy_suggestion(response):
