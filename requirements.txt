@@ -1,0 +1,9 @@
+uvicorn
+fastapi~=0.97.0
+sqlalchemy~=2.0.16
+python-dotenv==1.0.0
+python-multipart
+replicate
+smtplib
+fillpdf
+
